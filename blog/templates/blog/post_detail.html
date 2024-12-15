@@ -1,0 +1,8 @@
+{% extends 'blog/base_generic.html' %}
+
+{% block content %}
+<h1>{{ object.title }}</h1>
+<p><strong>Author:</strong> {{ object.author }}</p>
+<p>{{ object.body }}</p>
+<a href="{% url 'home' %}">Back to Home</a>
+{% endblock %}
